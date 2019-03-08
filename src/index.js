@@ -22,6 +22,7 @@ class DogeMeme extends React.Component {
 			input2: ''
 		};
 
+		this.handleClick = this.handleClick.bind(this);
 		this.handleChange = this.handleChange.bind(this);
 	}
 	handleChange(event) {
@@ -29,12 +30,17 @@ class DogeMeme extends React.Component {
 		const name = target.name;
 			this.setState({[name]: event.target.value.toUpperCase()});
 		}
+	handleClick(event) {
+		this.setState({input1: ""});
+		this.setState({input2:""});
+	}
 
 	render(){
 		return(
 			<div className='dog'>
 			<input name="input1" type="text" value={this.state.input1} onChange={this.handleChange} />
 			<input name="input2" type="text" value={this.state.input2} onChange={this.handleChange} />
+			<button className="borrar" onClick={this.handleClick}>RESET</button> 
 				<div className='caja'>
 					<h1 className='centrar1'>{this.state.input1}</h1>
 					<h1 className='centrar2'>{this.state.input2}</h1>
