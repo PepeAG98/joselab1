@@ -14,8 +14,30 @@ code {
 }
 
 
-.dog{
-	background: url('https://www.miifotos.com/thumbs/J_Q7W4xyXlZtxGzyelpaaf1M0ta1W6KmZrWAAK9S3OH0S6Mj8z-Xj1NhuXPQvp7MI5KkWOTtJlVRoQh7t-LbWQ.jpg');
+.dog {
+	background: url('https://www.meme-arsenal.com/memes/98c0fb217e3b35d20518647668cea5dc.jpg') no-repeat fixed center;
+	background-size: cover;
 	height: 100vh;
 	width:100%;
+}
+
+.caja{
+	display: flex;
+	flex-direction: column;
+	//background-color: white;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 100%;
+	font-family: "Roboto";
+	font-size: 150%;
+	 text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
+
+}
+
+h1{
+	color: white;
+	text-transform: uppercase;
+	word-spacing: 10px;
 }
